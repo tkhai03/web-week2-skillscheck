@@ -29,7 +29,7 @@ function setGroceryListTitle(x){
 // Code Here
 
 function addItem (item){
-    groceries.push()
+    groceries.push(item)
     return displayData()
 }
 
@@ -39,7 +39,7 @@ function addItem (item){
 // Code Here
 
 function removeItem(index){
-    groceries.splice(index)
+    groceries.splice(index, 1)
     return displayData()
 }
 
@@ -49,13 +49,12 @@ function removeItem(index){
 // Code Here
 
 function checkGroceryCount (){
-    if(groceries.length - 1 >= 5){
+    if(groceries.length >= 5){
     return 'That looks like a big trip'
-    } if(groceries.length - 1 === 1){
-    return '1 item'
-    } else (groceries.length -1 > 1 && groceries.length - 1 < 5){
-    return ''
+    } else if(groceries.length > 1 && groceries.length < 5){
+    return `${groceries.length} items`
     }
+    return '1 item'
 }
 
 //////////////////STEP 6////////////////////
