@@ -6,6 +6,8 @@
 
 // CODE HERE
 
+let faveColors = ['blue', 'purple', 'pink']
+
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstName, superHeroName, homeTown, superPowers, superPowerXP, and profileImage. 
 
@@ -23,10 +25,25 @@
 
 // CODE HERE
 
+let me = {
+    firstName: 'Khai',
+    superHeroName: 'Captain Car mel',
+    homeTown: 'Tropolis',
+    superPowers: ['Hindsight', 'Fortune', 'Visibility'],
+    superPowerXP: function(){
+        return Math.floor(Math.random() * 100) + 1 },
+    profileImage: function(){
+        return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`}
+}
+
+
+
 //////////////////Step 3////////////////////
 // In this step, you will create three variables that will hold some data from your me object. The first variable you create should be 'regularName', and it should receive its value from the value of your firstName key on the me object above. The next variable is 'superName' which should have its value assigned as the value of the superHeroName property on the me object. The last variable you should create is 'homeTown' which will be the value of homeTown on the me object
 
 // CODE HERE
+
+  let newData = {regularName:firstName, superHeroName:superName, homeTown:homeTown }
 
 //////////////////Step 4////////////////////
 //Create a function called 'setColor' that takes in one parameter called 'arr' that is an array of colors. Make sure that we only ever have three colors by using splice to trim the array to just 3 colors. 
@@ -35,13 +52,36 @@
 
 // CODE HERE
 
+function setColor(arr){
+    arr.splice(3, 0)
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === 'blue'){
+            return arr[i] = '#4D4DFF'
+        }
+
+    }
+    background(arr[0], arr[1], arr[2])
+}
+
+//console.log(setColor)
 //////////////////Step 5////////////////////
 //Create a function called 'setPowers' that takes in 'arr' as a parameter. In your setPowers function, loop over the arr parameter and run a function we created called createLi(), which will take each item of the array as an argument. Remember, you did not create the createLi function. The createLi function is a function we created that determines how the content is displayed.
 
 // CODE HERE
 
+function setPowers(arr){
+    for(let i = 0; i < arr.length; i++){
+        createLi(arr[i])
+    }
 
 //////////////////Step 6////////////////////
 //Lastly, create a function called 'redactInfo' that will take in an object called 'obj' as a parameter. Now, imagine your super hero needs to go undercover, and you need to remove all info about them. That is what this function will do. In your function, loop over the obj parameter passed in, and change each keys value to 'redacted'. Outside of the loop but still in the redactInfo function, run the function redacted() which is a function we created that will update the text on the screen.
 
 // CODE HERE
+
+function redactInfo(obj){
+    for(let key in obj){
+        obj[key] = "redacted"
+    }
+    redacted()
+}
