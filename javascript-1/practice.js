@@ -172,20 +172,34 @@ let doubled = myNumbers.map(function(num){
 
 // Code Here
 
-let filtered = 
+let filtered = myNumbers.filter(function(num){
+	return num > 100
+})
 
+//console.log(filtered)
 //////////////////PROBLEM 16////////////////////
 
 // Next, use reduce to get the total of the numbers in the array summed together. Store the total in a new variable named 'total'. 
 
 // Code Here
 
+let total = myNumbers.reduce(function(acc, el){
+	return acc + el
+}, 0)
+
+//console.log(total)
 //////////////////PROBLEM 17////////////////////
 
 // Finally, use .forEach to find the index of each item in the array. To begin, create an empty array called 'myNumbersIndex'. Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 // Code Here
 
+myNumbersIndex = []
+
+ myNumbers.forEach(function(myNumbers){
+	myNumbersIndex.push(myNumbers)
+})
+console.log(myNumbersIndex)
 //////////////////PROBLEM 18////////////////////
 
 // Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
@@ -193,6 +207,12 @@ const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 // Code Here
 
+const forTheLoveOfGeorge = notGeorge.map(function(i){
+	if (notGeorge[i] != 'George'){
+		return 'George';
+	}
+})
+//console.log(forTheLoveOfGeorge)
 //////////////////PROBLEM 19////////////////////
 
 // Using the people array, filter out everyone that isn't a friend into a new array called 'enemies'. Use .filter(). 
@@ -207,8 +227,15 @@ const people = [
 
 // Code Here
 
+let enemies = people.filter(function(){
+	return people.friend[] != true;
+})
+
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
+let totallyAwesome = people.reduce(function(acc, el){
+	return acc + people.awesomeLevel[]
+},acc)
