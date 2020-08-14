@@ -52,27 +52,27 @@
 .body-bottom {
     height: 35vh;
     width: 100vw;
-    display: flex;
+    display: center;
+    padding: 30px;
+
 }
 
 .text-box{
     height: 280px;
     width: 500px;
-
-}
-
-.p{
-    height: 240px;
-    width: 500px;
     color: darkslateblue;
-    border: dotted;
-
+    font-size: large;
+    /* display: flex;
+    justify-content: space-between; */
+    position: relative;
+    left: 170px;
 
 }
 
-.image-box{
+
+/* .image-box{
     img
-}
+} */
 
 .bottom {
     height: 15vh;
