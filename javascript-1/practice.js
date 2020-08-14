@@ -4,11 +4,15 @@
 
 // Code here
 
+let myName = 'Khai'
+
 //////////////////PROBLEM 2////////////////////
 
 // Create a variable called 'faveNum' with a value that is your favorite number. 
 
 //Code here
+
+let faveNum = 24
 
 //////////////////PROBLEM 3////////////////////
 
@@ -16,11 +20,18 @@
 
 //Code here
 
+let lovesCode = true
+
 //////////////////PROBLEM 4////////////////////
 
 // Create a function called 'sum' that takes in two parameters, 'num1' and 'num2'. The function should return the sum of the two parameters.
 
 //Code here
+
+ function sum(num1, num2){
+	return (num1 + num2);
+}
+
 
 //////////////////PROBLEM 5////////////////////
 
@@ -28,17 +39,37 @@
 
 //Code here
 
+function lovesCodeChecker(x){
+	if (x = true) {
+		return x === true;
+	}else {
+		return x === false;
+	}
+}
+
 //////////////////PROBLEM 6////////////////////
 
 // Create a function called 'oddChecker' that takes in one parameter, 'num'. Your function should check to see if the parameter is even or odd. If the parameter is odd, return 'the number is odd'. If the number is even, return 'the number is even'.
 
 //Code here
 
+function oddChecker (num){
+	if (num % 2 === 0) {
+		return 'the number is even'
+	} else {
+		return 'the number is odd'
+	}
+}
+
 //////////////////PROBLEM 7////////////////////
 
 // Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. Have the function take the two parameters and return a string that says "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 
 //Code Here
+
+function iLove(name, love){
+	return `${name} loves ${love}`
+}
 
 //////////////////PROBLEM 8////////////////////
 
@@ -47,11 +78,18 @@ const faveColors = ['red', 'green', 'black']
 
 //Code Here
 
+const colorCopy = faveColors.slice(0,3)
+//console.log(colorCopy)
+
 //////////////////PROBLEM 9////////////////////
 
 // Add a fourth color to the end of the 'colorCopy' array using push.
 
 //Code Here
+
+colorCopy.push('purple')
+
+//console.log(colorCopy)
 
 //////////////////PROBLEM 10////////////////////
 
@@ -60,11 +98,25 @@ const numbers = [1, 2, 3, 4, 5]
 
 //Code Here
 
+
+middleNums = numbers.splice(1, 3)
+
+//console.log(middleNums)
+
+
 //////////////////PROBLEM 11////////////////////
 
 // Create an object called 'me' that has the following keys: firstName, state, age, and greeter. The value of the firstName key should be your name as a string. The value of the property state should be your current state or providence of residence as a string. The value of age should be your age as a number. greeter should be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the corresponding values. 
 
 //Code Here
+
+let me = {
+	firstName: 'Khai',
+	state: 'Utah',
+	age: 25,
+	greeter: function(){
+		 `Hello! My name is ${firstName} and I live in ${state}`}
+}
 
 //////////////////PROBLEM 12////////////////////
 
@@ -72,11 +124,29 @@ const numbers = [1, 2, 3, 4, 5]
 
 // Code here
 
+function bigOrSmall (arr) {
+	let answers = [];
+	if( arr > 100){
+		return answers.push['big']
+	} if(arr <= 100){
+		return answers.push['small']
+	} 
+	return answers
+}
+
+
+
 //////////////////PROBLEM 13////////////////////
 
 // Create a function called 'arrayReverser' that takes in one parameter, 'arr'. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array IN REVERSE (this means your counter should decrement), and then add each item to the 'reversed' array variable you created. Finally, return the 'reversed' array variable. 
 
 //Code Here
+
+// function arrayReverser(arr){
+// 	reversed = [];
+// 	for(let )
+// }
+
 
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
@@ -90,11 +160,19 @@ const myNumbers = [3, 55, 788, 2, 1]
 
 // Code Here
 
+let doubled = myNumbers.map(function(num){
+	return num * 2
+})
+
+//console.log(doubled)
+
 //////////////////PROBLEM 15////////////////////
 
 // Now, use .filter to create a new array containing any numbers that are greater than 100. Call the new array 'filtered'. 
 
 // Code Here
+
+let filtered = 
 
 //////////////////PROBLEM 16////////////////////
 
