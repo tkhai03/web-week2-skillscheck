@@ -38,23 +38,44 @@
 .body-middle {
     height: 35vh;
     width: 100%;
-    /* display: flex;
+    display: flex;
     justify-content: space-evenly;
-    padding-top: 35px; */
+    padding-top: 35px;
 }
 
 .rectangles {
-    height: 100px;
-    width: 400px;
+    height: 280px;
+    width: 550px;
     background-color: orange;
 }
 
 .body-bottom {
     height: 35vh;
     width: 100vw;
+    display: flex;
 }
+
+.text-box{
+    height: 280px;
+    width: 500px;
+
+}
+
+.p{
+    height: 240px;
+    width: 500px;
+    color: darkslateblue;
+    border: dotted;
+
+
+}
+
+.image-box{
+    img
+}
+
 .bottom {
-    height: 10vh;
+    height: 15vh;
     width: 100%;
-    background-color: plum;
+    background-color: darkslateblue;
 }
