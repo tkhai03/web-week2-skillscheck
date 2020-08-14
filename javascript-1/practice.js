@@ -40,10 +40,10 @@ let lovesCode = true
 //Code here
 
 function lovesCodeChecker(x){
-	if (x = true) {
-		return x === true;
+	if (x === true) {
+		return true;
 	}else {
-		return x === false;
+		return false;
 	}
 }
 
@@ -124,16 +124,28 @@ let me = {
 
 // Code here
 
-function bigOrSmall (arr) {
-	let answers = [];
-	if( arr > 100){
-		return answers.push['big']
-	} if(arr <= 100){
-		return answers.push['small']
-	} 
+// function bigOrSmall (arr) {
+// 	let answers = [];
+// 	if( arr > 100){
+// 		return answers.push['big']
+// 	} if(arr <= 100){
+// 		return answers.push['small']
+// 	} 
+// 	return answers
+// }
+
+
+function bigOrSmall (arr){
+	let answers =[]
+	for(let i = 0; i < arr.length - 1; i++){
+		if (arr > 100){
+			answers += 'big'
+		} else {
+			return 'small'
+		}
+	}
 	return answers
 }
-
 
 
 //////////////////PROBLEM 13////////////////////
@@ -227,15 +239,15 @@ const people = [
 
 // Code Here
 
-let enemies = people.filter(function(){
-	return people.friend[] != true;
-})
+// let enemies = people.filter(function(){
+// 	return people.friend() != true;
+// })
 
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
 // Code Here
-let totallyAwesome = people.reduce(function(acc, el){
-	return acc + people.awesomeLevel[]
-},acc)
+// let totallyAwesome = people.reduce(function(acc, el){
+// 	return acc + people.awesomeLevel[]
+// },acc)
