@@ -159,6 +159,16 @@ function bigOrSmall (arr){
 // 	for(let )
 // }
 
+const arrayReverser = arr => {
+	const reversed = []
+	for(let i = arr.length - 1; i >= 0, i--){
+		reversed.push(arr[i])
+	}
+	return reversed
+}
+
+
+//let reversed = arr.reverse()
 
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
@@ -243,6 +253,12 @@ const people = [
 // 	return people.friend() != true;
 // })
 
+const enemies = people.filter(function(element){
+	return element.friend !== true
+})
+
+const enemies = people.filter(e => !e.friend)
+
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
@@ -251,3 +267,7 @@ const people = [
 // let totallyAwesome = people.reduce(function(acc, el){
 // 	return acc + people.awesomeLevel[]
 // },acc)
+
+const totallyAwesome = people.reduce((acc, curr) =>{
+	return acc + curr.awesomeLevel
+},0)
